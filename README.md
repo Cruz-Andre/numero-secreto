@@ -7,4 +7,5 @@
 - Mínimo de tentativas para acertar o número
 - Mostra na tela quantas tentativas tem e quantas faltam
 - Tela de game over se acabar as tentativas
+- Encerrar a API caso acerte ou acabe as tentativas
 ### GitHub Pages: ...
