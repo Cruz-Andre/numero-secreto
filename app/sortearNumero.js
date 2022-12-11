@@ -14,8 +14,8 @@ elementoMenorValor.innerHTML = menorValor
 
 const elementoMaiorValor = document.getElementById('maior-valor')
 elementoMaiorValor.innerHTML = maiorValor
-
 /**
  * Mesmo resultado que o acima, só que em uma linha. Mas não guarda em uma variável.
  * document.getElementById('maior-valor').innerHTML = maiorValor
  */
+
