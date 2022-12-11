@@ -8,14 +8,17 @@ recognition.start()
 
 recognition.addEventListener('result', onSpeak)
 
-function onSpeak(e) {
-  chute = e.results[0][0].transcript
-  exibeChuteNaTela(chute)
+function onSpeak(evento) {
+  falaChute = evento.results[0][0].transcript
+  exibeChuteNaTela(falaChute)
+  verificaFalaChutePossuiValorValido(falaChute)
 }
 
-function exibeChuteNaTela(fala) {
+function exibeChuteNaTela(chute) {
   elementoChute.innerHTML = `
     <div>Você disse</div>
-    <spa class="box">${fala}</span>
+    <spa class="box">${chute}</span>
   `
 }
+
+recognition.addEventListener('end', () => recognition.start())
