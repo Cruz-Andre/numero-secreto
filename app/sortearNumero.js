@@ -7,7 +7,7 @@ function gerarNumeroAleatorio() {
   return parseInt(Math.random() * maiorValor + 1)
 }
 
-console.log('Número secreto:',numeroSecreto)
+//console.log('Número secreto:',numeroSecreto)
 
 const elementoMenorValor = document.getElementById('menor-valor')
 elementoMenorValor.innerHTML = menorValor
@@ -18,4 +18,3 @@ elementoMaiorValor.innerHTML = maiorValor
  * Mesmo resultado que o acima, só que em uma linha. Mas não guarda em uma variável.
  * document.getElementById('maior-valor').innerHTML = maiorValor
  */
-

@@ -13,17 +13,20 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   text-align: center;
   margin: 0;
   font-family: var(--font-family);
 }
 
-h1 {
-  font-size: 5em;
+.cabecalho {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1em;
 }
 
-h2 {
+.cabecalho h1, h2 {
   font-size: 5em;
 }
 
@@ -32,9 +35,13 @@ h3 {
   margin-top: 20px;
 }
 
+main {
+  margin: 1rem 0 1rem 0;
+}
+
+
 .mensagem {
-  font-size: 1.5em;
-  margin-top: 40px;
+  font-size: 2.5em;
 }
 
 .box {
@@ -43,4 +50,55 @@ h3 {
   font-size: 4em;
   padding: 10px;
   margin: 20px;
+}
+
+.btn-jogar {
+  padding: 8px 15px;
+  border: 0;
+  background: var(--primary-color);
+  border-radius: 5px;
+  margin-top: 20px;
+  color: var(--bg-color);
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.rodape {
+  width: 100%;
+  height: 50px;
+  background-color: var(--primary-color);
+  color: var(--bg-color);
+  box-shadow: 0 -2px 30px rgb(0 0 0 / 50%);
+}
+
+.rodape p{
+  font-size: 2em;
+  margin: 0.6rem auto;
+}
+
+
+@media (max-width: 421px) {
+  .cabecalho h1, h2 {
+    font-weight: 600;
+    font-size: 1.8em;
+  }
+
+  .cabecalho h3 {
+    font-size: 1.8em;
+    margin: 0;
+  }
+
+  .mensagem {
+    font-size: 2em;
+  }
+
+  .box {
+    font-size: 2em;
+  }
+  
+  .rodape p {
+    font-size: 1.1em;
+    margin: 1rem auto;
+  }
 }
